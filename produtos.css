@@ -1,0 +1,239 @@
+/* ============================================================
+   AUTOSOUND - LOJA DE SOM AUTOMOTIVO
+   Arquivo: css/produtos.css
+   Página: Pages/Produtos.html
+
+   ESTE ARQUIVO CONTÉM:
+   - Banner de título da página de produtos
+   - Grid de produtos (8 produtos)
+   - Cards de produto com hover
+   - Seção "Produtos de Alta Qualidade"
+
+   IMPORTANTE: Este arquivo NÃO contém estilos de Header e Footer,
+   pois eles estão no style.css e são importados via <link>.
+   ============================================================ */
+
+/* ---------- Banner de título da página ---------- */
+.banner-produtos {
+    background: linear-gradient(135deg, var(--cor-fundo-escuro) 0%, var(--cor-fundo-cinza) 100%);
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de luz decorativa no banner */
+.banner-produtos::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,107,0,0.1) 0%, transparent 60%);
+}
+
+.banner-produtos h1 {
+    color: var(--cor-texto-claro);
+    font-size: 42px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-produtos h1 span {
+    color: var(--cor-primaria);
+}
+
+.banner-produtos p {
+    color: var(--cor-cinza-medio);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------- Seção de Produtos ---------- */
+.secao-produtos {
+    padding: 60px 0;
+    background-color: var(--cor-texto-claro);
+}
+
+.produtos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid de produtos: 4 colunas em desktop */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Card de produto */
+.produto-card {
+    background-color: var(--cor-texto-claro);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    border: 1px solid #eee;
+}
+
+/* Efeito HOVER no card de produto */
+.produto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border-color: var(--cor-primaria);
+}
+
+/* Container da imagem do produto */
+.produto-imagem {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--cor-cinza-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom na imagem ao passar o mouse */
+.produto-card:hover .produto-imagem img {
+    transform: scale(1.1);
+}
+
+/* Informações do produto */
+.produto-info {
+    padding: 20px;
+}
+
+.produto-info h3 {
+    color: var(--cor-texto-escuro);
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.produto-info .preco {
+    color: var(--cor-primaria);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Botão "Comprar" */
+.btn-comprar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid var(--cor-primaria);
+    width: 100%;
+    text-align: center;
+}
+
+.btn-comprar:hover {
+    background-color: transparent;
+    color: var(--cor-primaria);
+}
+
+/* ---------- Seção "Produtos de Alta Qualidade" ---------- */
+.qualidade {
+    padding: 80px 0;
+    background-color: var(--cor-cinza-claro);
+}
+
+.qualidade-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.qualidade-imagem {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.qualidade-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.qualidade-imagem:hover img {
+    transform: scale(1.05);
+}
+
+.qualidade-conteudo {
+    flex: 1;
+}
+
+.qualidade-conteudo h2 {
+    color: var(--cor-texto-escuro);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.qualidade-conteudo h2 span {
+    color: var(--cor-primaria);
+}
+
+.qualidade-conteudo p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em tablets */
+    }
+
+    .qualidade-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos-grid {
+        grid-template-columns: 1fr;  /* 1 coluna em celulares */
+    }
+
+    .banner-produtos h1 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================================
+         META TAGS E CONFIGURAÇÕES DA PÁGINA
+         ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSound - Som Automotivo de Qualidade</title>
+
+    <!-- ============================================================
+         ÍCONES DO GOOGLE FONTS (Material Symbols)
+         Biblioteca de ícones gratuita recomendada pelo professor
+         ============================================================ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- ============================================================
+         CSS PRINCIPAL
+         Contém: Header, Footer, Hero, Sobre, Estatísticas, Serviços, Equipe
+         ============================================================ -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         HEADER - CABEÇALHO (FIXO EM TODAS AS PÁGINAS)
+         Este código se repete EXATAMENTE IGUAL em:
+         - Index.html (esta página)
+         - Pages/Produtos.html
+         - Pages/Contatos.html
+         ============================================================ -->
+    <header>
+        <div class="header-container">
+            <!-- Logo da loja -->
+            <div class="logo">
+                <!-- A logo é carregada da pasta img/ -->
+                <img src="img/logo.png" alt="AutoSound Logo">
+                <span class="logo-texto">AutoSound</span>
+            </div>
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul>
+                    <!-- Link para a página INÍCIO (página atual) -->
+                    <li><a href="index.html">Início</a></li>
+                    <!-- Link para a página PRODUTOS -->
+                    <li><a href="pages/produtos.html">Produtos</a></li>
+                    <!-- Link para a página CONTATOS -->
+                    <li><a href="pages/contatos.html">Contatos</a></li>
+
+                    <!-- Barra de pesquisa (apenas visual, não funcional) -->
+                    <li>
+                        <div class="barra-pesquisa">
+                            <input type="text" placeholder="Pesquisar">
+                            <span class="material-symbols-outlined icone-pesquisa">search</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+
+    <!-- ============================================================
+         CONTEÚDO PRINCIPAL DA PÁGINA INÍCIO
+         (Esta parte MUDA em cada página)
+         ============================================================ -->
+    <main>
+
+        <!-- ---------- SEÇÃO HERO (Banner Principal) ---------- -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-conteudo">
+                    <h1>Qualidade de som que <span>transforma</span> seu carro.</h1>
+                    <p>Na AutoSound, oferecemos os melhores produtos de som automotivo do mercado. Desde alto-falantes potentes até rádios modernos com Bluetooth, temos tudo para elevar sua experiência de direção.</p>
+                    <div class="hero-botoes">
+                        <a href="pages/contatos.html" class="btn-primario">Contate-nos</a>
+                        <a href="pages/produtos.html" class="btn-secundario">Ver produtos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO SOBRE ---------- -->
+        <section class="sobre">
+            <div class="sobre-container">
+                <div class="sobre-conteudo">
+                    <h2>Como apaixonados por <span>som automotivo</span></h2>
+                    <p>Fundada em 2018, a AutoSound nasceu da paixão por carros e música. Nosso objetivo é levar a melhor experiência sonora para dentro do seu veículo, com produtos de qualidade e atendimento especializado.</p>
+                    <p>Trabalhamos com as principais marcas do mercado e nossa equipe técnica está sempre pronta para instalar e configurar seu sistema de som com perfeição.</p>
+                    <a href="pages/produtos.html" class="btn-primario">Catálogo</a>
+                </div>
+                <div class="sobre-imagem">
+                    <!-- Imagem profissional de instalação de som automotivo da internet -->
+                    <img src="https://images.unsplash.com/photo-1541445524871-0974f3b0cf20?w=600" alt="Instalação de som automotivo">
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO ESTATÍSTICAS ---------- -->
+        <section class="estatisticas">
+            <div class="estatisticas-container">
+                <!-- Estatística 1 -->
+                <div class="estatistica-item">
+                    <span class="material-symbols-outlined icone">sentiment_very_satisfied</span>
+                    <h3>+2.847</h3>
+                    <p>Clientes felizes</p>
+                </div>
+                <!-- Estatística 2 -->
+                <div class="estatistica-item">
+                    <span class="material-symbols-outlined icone">settings</span>
+                    <h3>+1.532</h3>
+                    <p>Instalações realizadas</p>
+                </div>
+                <!-- Estatística 3 -->
+                <div class="estatistica-item">
+                    <span class="material-symbols-outlined icone">inventory_2</span>
+                    <h3>+5.600</h3>
+                    <p>Produtos vendidos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO SERVIÇOS ---------- -->
+        <section class="servicos">
+            <div class="servicos-container">
+                <div class="servicos-titulo">
+                    <h2>Nossos <span>Serviços</span></h2>
+                    <p>Conheça alguns dos principais serviços oferecidos pela nossa loja.</p>
+                </div>
+
+                <div class="servicos-grid">
+                    <!-- Serviço 1 -->
+                    <div class="servico-card">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400" alt="Instalação de Som">
+                        <div class="servico-info">
+                            <h3>Instalação de Som</h3>
+                            <p class="preco">R$ 150,00</p>
+                            <p>Instalação completa de alto-falantes, módulos e subwoofers com garantia.</p>
+                            <a href="#" class="btn-ver-mais">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="servico-card">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400" alt="Manutenção de Som">
+                        <div class="servico-info">
+                            <h3>Manutenção de Som</h3>
+                            <p class="preco">R$ 80,00</p>
+                            <p>Diagnóstico e reparo de falhas no sistema de áudio do seu veículo.</p>
+                            <a href="#" class="btn-ver-mais">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="servico-card">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400" alt="Personalização LED">
+                        <div class="servico-info">
+                            <h3>Personalização LED</h3>
+                            <p class="preco">R$ 120,00</p>
+                            <p>Instalação de fitas LED RGB para iluminação interna do veículo.</p>
+                            <a href="#" class="btn-ver-mais">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO EQUIPE ---------- -->
+        <section class="equipe">
+            <div class="equipe-container">
+                <div class="equipe-titulo">
+                    <h2>Nossa <span>Equipe</span></h2>
+                </div>
+
+                <div class="equipe-grid">
+                    <!-- Membro 1 -->
+                    <div class="equipe-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" alt="João Silva">
+                        <h3>João Silva</h3>
+                        <p>Técnico em Som</p>
+                    </div>
+
+                    <!-- Membro 2 -->
+                    <div class="equipe-card">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300" alt="Pedro Costa">
+                        <h3>Pedro Costa</h3>
+                        <p>Especialista em Instalação</p>
+                    </div>
+
+                    <!-- Membro 3 -->
+                    <div class="equipe-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" alt="Lucas Mendes">
+                        <h3>Lucas Mendes</h3>
+                        <p>Consultor de Vendas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+
+    <!-- ============================================================
+         FOOTER - RODAPÉ (FIXO EM TODAS AS PÁGINAS)
+         Este código se repete EXATAMENTE IGUAL em:
+         - Index.html (esta página)
+         - Pages/Produtos.html
+         - Pages/Contatos.html
+         ============================================================ -->
+    <footer>
+        <div class="footer-container">
+            <!-- Coluna 1: Marca -->
+            <div class="footer-marca">
+                <h3>AutoSound</h3>
+                <p>Tudo para o seu carro com qualidade, potência e os melhores produtos de som automotivo do mercado.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">
+                        <span class="material-symbols-outlined">photo_camera</span>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <span class="material-symbols-outlined">play_circle</span>
+                    </a>
+                    <a href="#" aria-label="Email">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Navegação -->
+            <div class="footer-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pages/produtos.html">Produtos</a></li>
+                    <li><a href="pages/contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Atendimento -->
+            <div class="footer-coluna">
+                <h4>Atendimento</h4>
+                <p>(92) 99999-9999</p>
+                <p>contato@autosound.com</p>
+                <p>Seg à Sex: 9h às 18h</p>
+            </div>
+
+            <!-- Coluna 4: Endereço -->
+            <div class="footer-coluna">
+                <h4>Endereço</h4>
+                <p>Rua do Som, 123</p>
+                <p>Manaus - Amazonas</p>
+                <a href="#" class="btn-mapa">Ver no mapa</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2026 AutoSound - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
+
+</body>
+</html>

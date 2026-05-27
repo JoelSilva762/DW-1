@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================================
+         META TAGS E CONFIGURAÇÕES DA PÁGINA
+         ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - AutoSound</title>
+
+    <!-- ============================================================
+         ÍCONES DO GOOGLE FONTS (Material Symbols)
+         ============================================================ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- ============================================================
+         CSS PRINCIPAL (style.css)
+         Contém os estilos do HEADER e FOOTER que se repetem
+         ============================================================ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ============================================================
+         CSS ESPECÍFICO DA PÁGINA DE PRODUTOS
+         Contém: Banner, Grid de Produtos, Seção Qualidade
+         ============================================================ -->
+    <link rel="stylesheet" href="../css/produtos.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         HEADER - CABEÇALHO (FIXO EM TODAS AS PÁGINAS)
+
+         CÓDIGO IDÊNTICO ao Index.html e Contatos.html
+
+         ATENÇÃO: Como este arquivo está em /Pages/, os links
+         usam "../" para voltar à pasta raiz do projeto.
+         ============================================================ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../img/logo.png" alt="AutoSound Logo">
+                <span class="logo-texto">AutoSound</span>
+            </div>
+            <nav>
+                <ul>
+                    <!-- "../" volta uma pasta para chegar ao index.html na raiz -->
+                    <li><a href="../index.html">Início</a></li>
+                    <!-- Link para a própria página (página atual) -->
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li>
+                        <div class="barra-pesquisa">
+                            <input type="text" placeholder="Pesquisar">
+                            <span class="material-symbols-outlined icone-pesquisa">search</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+
+    <!-- ============================================================
+         CONTEÚDO PRINCIPAL DA PÁGINA PRODUTOS
+         (Esta parte é ÚNICA desta página)
+         ============================================================ -->
+    <main>
+
+        <!-- ---------- Banner de título ---------- -->
+        <section class="banner-produtos">
+            <h1>Nossos <span>Produtos</span></h1>
+            <p>Trabalhamos com os melhores produtos para garantir qualidade, potência e satisfação para o seu som automotivo.</p>
+        </section>
+
+        <!-- ---------- Seção de Produtos ---------- -->
+        <section class="secao-produtos">
+            <div class="produtos-container">
+
+                <!-- Grid com 8 produtos -->
+                <div class="produtos-grid">
+
+                    <!-- PRODUTO 1 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400" alt="Mini Caixa de Som Bluetooth">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Mini Caixa de Som Bluetooth Automotiva</h3>
+                            <p class="preco">R$ 59,90</p>
+                            <p>Caixa compacta com conexão Bluetooth e iluminação LED.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 2 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400" alt="Alto-Falante 6 polegadas">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Alto-Falante 6" Universal</h3>
+                            <p class="preco">R$ 79,90</p>
+                            <p>Alto-falante simples para melhorar o som interno do carro.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 3 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf1f3d4f9c9?w=400" alt="Tweeter Automotivo">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Tweeter Automotivo Básico</h3>
+                            <p class="preco">R$ 39,90</p>
+                            <p>Agudos mais fortes e limpos para o sistema de som.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 4 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400" alt="Fita LED RGB">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Fita LED RGB Automotiva</h3>
+                            <p class="preco">R$ 29,90</p>
+                            <p>Iluminação decorativa para painel e porta-malas.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 5 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" alt="Adaptador Bluetooth">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Adaptador Bluetooth para Som</h3>
+                            <p class="preco">R$ 34,90</p>
+                            <p>Permite conectar celular em aparelhos antigos.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 6 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400" alt="Mini Subwoofer">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Mini Subwoofer Compacto</h3>
+                            <p class="preco">R$ 149,90</p>
+                            <p>Grave reforçado para sistemas pequenos automotivos.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 7 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" alt="Suporte para Celular">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Suporte para Celular Veicular</h3>
+                            <p class="preco">R$ 24,90</p>
+                            <p>Suporte ajustável para painel ou saída de ar.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 8 -->
+                    <div class="produto-card">
+                        <div class="produto-imagem">
+                            <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=400" alt="Rádio Automotivo">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Rádio Automotivo USB/Bluetooth</h3>
+                            <p class="preco">R$ 129,90</p>
+                            <p>Rádio simples com entrada USB e Bluetooth.</p>
+                            <a href="#" class="btn-comprar">Comprar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- Seção "Produtos de Alta Qualidade" ---------- -->
+        <section class="qualidade">
+            <div class="qualidade-container">
+                <div class="qualidade-imagem">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600" alt="Produtos de Alta Qualidade">
+                </div>
+                <div class="qualidade-conteudo">
+                    <h2>Produtos de Alta <span>Qualidade</span></h2>
+                    <p>Todos os nossos produtos são selecionados com cuidado para oferecer o melhor para o seu carro.</p>
+                    <p>Trabalhamos com marcas confiáveis e produtos aprovados por especialistas em som automotivo.</p>
+                    <a href="#" class="btn-primario">Ver Catálogo</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+
+    <!-- ============================================================
+         FOOTER - RODAPÉ (FIXO EM TODAS AS PÁGINAS)
+
+         CÓDIGO IDÊNTICO ao Index.html e Contatos.html
+
+         ATENÇÃO: Links usam "../" para voltar à pasta raiz.
+         ============================================================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <h3>AutoSound</h3>
+                <p>Tudo para o seu carro com qualidade, potência e os melhores produtos de som automotivo do mercado.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">
+                        <span class="material-symbols-outlined">photo_camera</span>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <span class="material-symbols-outlined">play_circle</span>
+                    </a>
+                    <a href="#" aria-label="Email">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h4>Atendimento</h4>
+                <p>(92) 99999-9999</p>
+                <p>contato@autosound.com</p>
+                <p>Seg à Sex: 9h às 18h</p>
+            </div>
+            <div class="footer-coluna">
+                <h4>Endereço</h4>
+                <p>Rua do Som, 123</p>
+                <p>Manaus - Amazonas</p>
+                <a href="#" class="btn-mapa">Ver no mapa</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 AutoSound - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
+
+</body>
+</html>

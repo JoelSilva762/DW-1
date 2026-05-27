@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================================
+         META TAGS E CONFIGURAÇÕES DA PÁGINA
+         ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - AutoSound</title>
+
+    <!-- ============================================================
+         ÍCONES DO GOOGLE FONTS (Material Symbols)
+         ============================================================ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- ============================================================
+         CSS PRINCIPAL (style.css)
+         Contém os estilos do HEADER e FOOTER que se repetem
+         ============================================================ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ============================================================
+         CSS ESPECÍFICO DA PÁGINA DE CONTATOS
+         Contém: Banner, Formulário, Info Cards, Mapa, WhatsApp CTA
+         ============================================================ -->
+    <link rel="stylesheet" href="../css/contatos.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         HEADER - CABEÇALHO (FIXO EM TODAS AS PÁGINAS)
+
+         CÓDIGO IDÊNTICO ao Index.html e Produtos.html
+
+         ATENÇÃO: Como este arquivo está em /Pages/, os links
+         usam "../" para voltar à pasta raiz do projeto.
+         ============================================================ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../img/logo.png" alt="AutoSound Logo">
+                <span class="logo-texto">AutoSound</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li>
+                        <div class="barra-pesquisa">
+                            <input type="text" placeholder="Pesquisar">
+                            <span class="material-symbols-outlined icone-pesquisa">search</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+
+    <!-- ============================================================
+         CONTEÚDO PRINCIPAL DA PÁGINA CONTATOS
+         (Esta parte é ÚNICA desta página)
+         ============================================================ -->
+    <main>
+
+        <!-- ---------- Banner de título ---------- -->
+        <section class="banner-contatos">
+            <div class="banner-contatos-container">
+                <h1>Fale com a <span>AutoSound!</span></h1>
+                <p>Tem dúvidas, sugestões ou quer fazer um pedido? Nossa equipe está pronta para ajudar você.</p>
+                <a href="#formulario" class="btn-primario">Entrar em contato</a>
+            </div>
+        </section>
+
+        <!-- ---------- Seção Formulário + Informações ---------- -->
+        <section class="secao-contato" id="formulario">
+            <div class="contato-container">
+
+                <!-- Área do Formulário (lado esquerdo) -->
+                <div class="formulario-area">
+                    <h2>Envie sua <span>mensagem</span></h2>
+                    <p>Preencha o formulário abaixo e responderemos o mais rápido possível.</p>
+
+                    <!-- 
+                         FORMULÁRIO DE CONTATO (NÃO FUNCIONAL)
+                         Este formulário é apenas visual. Não envia dados.
+                         O atributo "action" está vazio e o método é GET.
+                    -->
+                    <form class="formulario-contato" action="" method="GET">
+
+                        <!-- Campo Nome -->
+                        <div class="campo-grupo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <!-- Campo E-mail -->
+                        <div class="campo-grupo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+
+                        <!-- Campo Assunto -->
+                        <div class="campo-grupo">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+                        </div>
+
+                        <!-- Campo Mensagem -->
+                        <div class="campo-grupo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                        </div>
+
+                        <!-- Botão Enviar -->
+                        <button type="submit" class="btn-enviar">Enviar mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Área de Informações (lado direito) -->
+                <div class="informacoes-area">
+
+                    <!-- Card Telefone -->
+                    <div class="info-card">
+                        <div class="info-icone">
+                            <span class="material-symbols-outlined">phone</span>
+                        </div>
+                        <div class="info-conteudo">
+                            <h4>Telefone</h4>
+                            <p>(92) 99999-9999</p>
+                        </div>
+                    </div>
+
+                    <!-- Card E-mail -->
+                    <div class="info-card">
+                        <div class="info-icone">
+                            <span class="material-symbols-outlined">email</span>
+                        </div>
+                        <div class="info-conteudo">
+                            <h4>E-mail</h4>
+                            <p>contato@autosound.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Endereço -->
+                    <div class="info-card">
+                        <div class="info-icone">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div class="info-conteudo">
+                            <h4>Endereço</h4>
+                            <p>Rua do Som, 123 - Manaus</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Horário -->
+                    <div class="info-card">
+                        <div class="info-icone">
+                            <span class="material-symbols-outlined">schedule</span>
+                        </div>
+                        <div class="info-conteudo">
+                            <h4>Horário</h4>
+                            <p>Seg à Sex: 9h às 18h</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- Seção Mapa ---------- -->
+        <section class="secao-mapa">
+            <div class="mapa-container">
+                <div class="mapa-conteudo">
+                    <h2>Onde <span>estamos</span></h2>
+                    <p>Venha visitar nossa loja física e conhecer nossos produtos de perto. Estamos localizados no coração de Manaus.</p>
+                    <a href="#" class="btn-localizacao">Ver localização</a>
+                </div>
+                <div class="mapa-imagem">
+                    <!-- Imagem de mapa da internet (Yandex Maps de Manaus) -->
+                    <img src="https://static-maps.yandex.ru/1.x/?ll=-60.0217,-3.1019&z=13&l=map&size=600,400" alt="Mapa de Manaus">
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- Seção WhatsApp CTA ---------- -->
+        <section class="whatsapp-cta">
+            <div class="whatsapp-container">
+                <div class="whatsapp-texto">
+                    <h3>Ainda ficou com dúvidas?</h3>
+                    <p>Fale com nossa equipe pelo WhatsApp.</p>
+                </div>
+                <a href="#" class="btn-whatsapp">
+                    <span class="material-symbols-outlined">chat</span>
+                    WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+
+    <!-- ============================================================
+         FOOTER - RODAPÉ (FIXO EM TODAS AS PÁGINAS)
+
+         CÓDIGO IDÊNTICO ao Index.html e Produtos.html
+
+         ATENÇÃO: Links usam "../" para voltar à pasta raiz.
+         ============================================================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-marca">
+                <h3>AutoSound</h3>
+                <p>Tudo para o seu carro com qualidade, potência e os melhores produtos de som automotivo do mercado.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">
+                        <span class="material-symbols-outlined">photo_camera</span>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <span class="material-symbols-outlined">play_circle</span>
+                    </a>
+                    <a href="#" aria-label="Email">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h4>Atendimento</h4>
+                <p>(92) 99999-9999</p>
+                <p>contato@autosound.com</p>
+                <p>Seg à Sex: 9h às 18h</p>
+            </div>
+            <div class="footer-coluna">
+                <h4>Endereço</h4>
+                <p>Rua do Som, 123</p>
+                <p>Manaus - Amazonas</p>
+                <a href="#" class="btn-mapa">Ver no mapa</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 AutoSound - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
+
+</body>
+</html>

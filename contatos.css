@@ -1,0 +1,348 @@
+/* ============================================================
+   AUTOSOUND - LOJA DE SOM AUTOMOTIVO
+   Arquivo: css/contatos.css
+   Página: Pages/Contatos.html
+
+   ESTE ARQUIVO CONTÉM:
+   - Banner de título da página de contatos
+   - Formulário de contato (não funcional)
+   - Cards de informações (Telefone, E-mail, Endereço, Horário)
+   - Seção do mapa
+   - Seção WhatsApp CTA
+
+   IMPORTANTE: Este arquivo NÃO contém estilos de Header e Footer,
+   pois eles estão no style.css e são importados via <link>.
+   ============================================================ */
+
+/* ---------- Banner de título da página ---------- */
+.banner-contatos {
+    background: linear-gradient(135deg, var(--cor-fundo-escuro) 0%, var(--cor-fundo-cinza) 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-contatos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 70%);
+}
+
+.banner-contatos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-contatos h1 {
+    color: var(--cor-texto-claro);
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.banner-contatos h1 span {
+    color: var(--cor-primaria);
+}
+
+.banner-contatos p {
+    color: var(--cor-cinza-medio);
+    font-size: 18px;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* ---------- Seção Formulário + Informações ---------- */
+.secao-contato {
+    padding: 60px 0;
+    background-color: var(--cor-texto-claro);
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 50px;
+}
+
+/* Área do formulário (ocupa mais espaço) */
+.formulario-area {
+    flex: 1.2;
+}
+
+.formulario-area h2 {
+    color: var(--cor-texto-escuro);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.formulario-area h2 span {
+    color: var(--cor-primaria);
+}
+
+.formulario-area > p {
+    color: var(--cor-cinza-medio);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Formulário de contato */
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupo de cada campo do formulário */
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-grupo label {
+    color: var(--cor-texto-escuro);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Inputs e textarea */
+.campo-grupo input,
+.campo-grupo textarea {
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efeito FOCUS nos campos - borda laranja ao clicar */
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(255,107,0,0.1);
+    background-color: var(--cor-texto-claro);
+}
+
+.campo-grupo textarea {
+    resize: vertical;  /* Permite redimensionar apenas verticalmente */
+    min-height: 120px;
+}
+
+/* Botão de enviar */
+.btn-enviar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-primaria-escura);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,107,0,0.3);
+}
+
+/* ---------- Cards de informações de contato ---------- */
+.informacoes-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card de informação individual */
+.info-card {
+    background-color: var(--cor-texto-claro);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transform: translateX(5px);  /* Move para a direita no hover */
+}
+
+/* Ícone circular do card */
+.info-icone {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto-claro);
+    font-size: 24px;
+    flex-shrink: 0;  /* Impede que o ícone encolha */
+}
+
+.info-conteudo h4 {
+    color: var(--cor-texto-escuro);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.info-conteudo p {
+    color: var(--cor-cinza-medio);
+    font-size: 14px;
+}
+
+/* ---------- Seção Mapa ---------- */
+.secao-mapa {
+    padding: 60px 0;
+    background-color: var(--cor-cinza-claro);
+}
+
+.mapa-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.mapa-conteudo {
+    flex: 1;
+}
+
+.mapa-conteudo h2 {
+    color: var(--cor-texto-escuro);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.mapa-conteudo h2 span {
+    color: var(--cor-primaria);
+}
+
+.mapa-conteudo p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn-localizacao {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid var(--cor-fundo-escuro);
+}
+
+.btn-localizacao:hover {
+    background-color: transparent;
+    color: var(--cor-fundo-escuro);
+}
+
+/* Imagem do mapa */
+.mapa-imagem {
+    flex: 1.5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.mapa-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Seção WhatsApp CTA ---------- */
+.whatsapp-cta {
+    background-color: var(--cor-primaria);
+    padding: 40px 0;
+}
+
+.whatsapp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whatsapp-texto h3 {
+    color: var(--cor-texto-claro);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.whatsapp-texto p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+}
+
+.btn-whatsapp {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--cor-texto-claro);
+    color: var(--cor-fundo-escuro);
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .mapa-container {
+        flex-direction: column;
+    }
+
+    .whatsapp-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .banner-contatos h1 {
+        font-size: 28px;
+    }
+}
